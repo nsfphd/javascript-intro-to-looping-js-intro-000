@@ -7,6 +7,7 @@ function forLoop(arr){
       arr.push('I am ${i} strange loops.')
     }
   }
+  return arr
 }
 
 function whileLoop(n){
@@ -14,4 +15,14 @@ function whileLoop(n){
     console.log(--n)
   }
   console.log('done')
+}
+
+function doWhileLoop(arr){
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+  do {
+    arr.pop()
+  } while (array.length >0 && maybeTrue());
+  return arr
 }
